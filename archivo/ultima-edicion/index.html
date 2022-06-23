@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      function toggleNav() {
+        const mobileNav = document.getElementById("nav-mob");
+        if (mobileNav.style.height === "auto") {
+          mobileNav.style.height = 0;
+        } else {
+          mobileNav.style.height = "auto";
+        }
+      }
+    </script>
+    <title>Última Edición | Referentes</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="title">
+          <div class="title-cont">
+            <a href="../"> <b>REFERENTES</b></a>
+          </div>
+        </div>
+        <div class="nav-links">
+          <a href="../articulos/">Artículos</a>
+          <p>|</p>
+          <a href="../ultima-edicion/">Última edición</a>
+          <p>|</p>
+          <a href="../nosotros/">Nosotros</a>
+        </div>
+        <div class="nav-mobile">
+          <a class="a-svg" onclick="toggleNav()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              /></svg
+          ></a>
+        </div>
+      </nav>
+      <div class="nav-mobile-links" id="nav-mob">
+        <div class="mobile-link-cont">
+          <a href="../articulos/">Artículos</a>
+        </div>
+        <div class="mobile-link-cont">
+          <a href="../ultima-edicion/">Última edición</a>
+        </div>
+        <div class="mobile-link-cont">
+          <a href="../nosotros/">Nosotros</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pdf-cont">
+        <a
+          href="https://static1.squarespace.com/static/5c3387d8ee1759bf62984bc3/t/61396316a975261d71967275/1631150879732/REFERENTES-JoséMariaArguedas.pdf"
+          ><embed
+            src="https://static1.squarespace.com/static/5c3387d8ee1759bf62984bc3/t/61396316a975261d71967275/1631150879732/REFERENTES-JoséMariaArguedas.pdf"
+            type="application/pdf"
+            view="Fit"
+            scrollbar="1"
+            toolbar="1"
+            statusbar="1"
+        /></a>
+      </div>
+      <div class="info-cont">
+        <h2>Publicación:</h2>
+        <p>Julio 2021</p>
+        <h2>Autores y editores:</h2>
+        <p>
+          Nicolás Trillo, Santiago Beltrán, Christopher Guevara, Mateo Navarro,
+          Juan Pablo Belón.
+        </p>
+        <h2>Serie:</h2>
+        <p>REFERENTES | Letras</p>
+        <h2>Imprenta:</h2>
+        <p>Finishing S.A.C.</p>
+        <h2>Edición Posterior:</h2>
+        <p>REFERENTES | Economía: El Fracaso del Socialismo (Noviembre 2021)</p>
+        <h2>Edición Anterior:</h2>
+        <p>--</p>
+      </div>
+    </main>
+    <footer>
+      <div class="nota">
+        <p>
+          REFERENTES <br />
+          Es una revista digital e impresa.
+        </p>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2021, Grupo REFERENTES</p>
+        <p>Arequipa, República del Perú</p>
+      </div>
+    </footer>
+  </body>
+</html>
