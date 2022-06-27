@@ -1,0 +1,36 @@
+#slides {
+    z-index: -100;
+}
+header, footer {
+    z-index: 100;
+    position: relative;
+}
+#foot, #foot * {
+    background-color: transparent;
+}
+#foot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}
+main .texto-nobel {
+    margin: var(--spacing);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* left: 0; */
+    height: fit-content;
+    right: 0;
+    color: white;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0.8);
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.texto-nobel * {
+    color: white;
+    text-align: right;
+    font-family: 'Merriweather', serif;
+}

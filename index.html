@@ -5,23 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="basic.css" />
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery.subtle-slideshow.js"></script>
+    <link rel="stylesheet" href="subtle-slideshow.css" />
+    <link rel="stylesheet" href="./basic.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
     <title>Home | Referentes</title>
   </head>
-  <body>
-    <header>
+  <body onload="startupSequence();">
+    <header id="header">
       <div class="logo">
         <h1>REFERENTES</h1>
       </div>
       <div class="nav-links">
-        <a href="./">Home</a>
-        <a href="./nobel/">Nobeles</a>
-        <a href="./archivo/" target="_blank">Archivo 2021</a>
+        <a href="./">Nobeles</a>
+        <a href="./archivo/" target="_blank">Pagina Principal</a>
       </div>
     </header>
-    <main></main>
-    <footer class="f-serif">
+    <main id="main">
+      <div id="slides" class="f-serif">
+        <a class="slide" href="#">
+          <span
+            class="animate in"
+            style="background-image: url(./img/hemingway.jpg)"
+          ></span>
+          <div class="static-content">
+            <div class="texto-nobel">
+              <div class="txt-nb-in">
+                <h1>Ernest Hemingway</h1>
+                <p>Premio Nobel de Literatura</p>
+                <p>1954</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="slide" href="#">
+          <span
+            class="animate out"
+            style="background-image: url(./img/steinbeck.jpg)"
+          ></span>
+          <div class="static-content">
+            <div class="texto-nobel">
+              <div class="txt-nb-in">
+                <h1>John Steinbeck</h1>
+                <p>Premio Nobel de Literatura</p>
+                <p>1962</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="slide" href="#">
+          <span
+            class="animate in"
+            style="background-image: url(./img/sartre.jpg)"
+          ></span>
+          <div class="static-content">
+            <div class="texto-nobel">
+              <div class="txt-nb-in">
+                <h1>Jean-Paul Sartre</h1>
+                <p>Premio Nobel de Literatura</p>
+                <p>1964</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <script>
+        // These are te default settings.
+        $("#slides").slideshow({
+          randomize: false, // Randomize the play order of the slides.
+          slideDuration: 6000, // Duration of each induvidual slide.
+          fadeDuration: 1000, // Duration of the fading transition. Should be shorter than slideDuration.
+          animate: true, // Turn css animations on or off.
+          pauseOnTabBlur: false, // Pause the slideshow when the tab is out of focus. This prevents glitches with setTimeout().
+          enableLog: false, // Enable log messages to the console. Useful for debugging.
+        });
+      </script>
+    </main>
+    <footer class="f-serif" id="foot">
       <div class="referentes-info">
         REFERENTES<br />Es una revista digital e impresa.
       </div>
