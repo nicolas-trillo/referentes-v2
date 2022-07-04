@@ -1,0 +1,33 @@
+@import url(../basic.css);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+#main {
+    max-width: 700px;
+    margin: auto;
+    padding: var(--spacing);
+    padding-top: 0;
+}
+.bod-title-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: var(--double-spacing);
+}
+.bod-title-cont p {
+    padding: var(--half-spacing);
+}
+.nobel-cont {
+    padding: var(--half-spacing);
+    padding-top: var(--double-spacing);
+}
+.datos-nob {
+    padding-top: var(--half-spacing);
+    display: flex;
+    justify-content: space-between;
+}
+.img-nob img {
+    border-radius: var(--nt-radius);
+    -webkit-border-radius: var(--nt-radius);
+    -moz-border-radius: var(--nt-radius);
+    -ms-border-radius: var(--nt-radius);
+    -o-border-radius: var(--nt-radius);
+}

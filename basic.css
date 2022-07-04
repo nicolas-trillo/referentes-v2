@@ -11,7 +11,8 @@
   --nt-radius: 12px;
   --blue: rgb(13, 110, 253);
   --black: rgb(34, 37, 41);
-  --apple-blue: rgb(0, 122, 255);
+  /* --apple-blue: rgb(0, 122, 255); */
+  --apple-blue: rgb(107, 35, 22);
   --light-gray-text: rgb(173, 181, 189);
   /* font-family: 'Crimson Pro', serif; */
 }
@@ -77,8 +78,11 @@ header, footer {
 }
 .logo * {
     user-select: none;
-    pointer-events: none;
     letter-spacing: 4px;
+    text-decoration: none;
+}
+.logo a {
+  cursor: pointer;
 }
 .nav-links {
     display: flex;
@@ -102,7 +106,33 @@ header *, footer * {
 .copyright {
     text-align: right;
 }
-
+.nt-nav-button {
+  background-color: var(--bs);
+  background-color: var(--ligt-gray);
+  padding: var(--nt-btn-pad);
+  border-radius: var(--nt-radius);
+  -webkit-border-radius: var(--nt-radius);
+  -moz-border-radius: var(--nt-radius);
+  -ms-border-radius: var(--nt-radius);
+  -o-border-radius: var(--nt-radius);
+  color: black;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  border: none;
+  font-size: medium;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nt-nav-button:hover {
+  background-color: var(--apple-blue);
+  color: white;
+}
+.nt-nav-button:hover * {
+  color: white;
+}
 /* Body */
 main {
     /* min-height: 100vh; */
