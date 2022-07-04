@@ -34,3 +34,16 @@ main .texto-nobel {
     text-align: right;
     font-family: 'Merriweather', serif;
 }
+.txt-nb-in {
+    font-family: 'Inter', sans-serif !important;
+}
+.nt-nav-button {
+    color: var(--black);
+    margin-top: var(--half-spacing);
+}
+.nt-nav-button * {
+    color: var(--black);
+}
+.texto-nobel *{
+    font-family: 'Inter', sans-serif !important;
+}

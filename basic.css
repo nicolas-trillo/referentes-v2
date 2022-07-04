@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Inter:wght@400;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 /* -- Variables -- */
 
@@ -73,8 +74,11 @@ header, footer {
     display: flex;
     padding: var(--spacing);
 }
-.logo, .nav-links {
-    width: 50%;
+.nav-links {
+  flex-grow: 2;
+}
+.logo {
+  flex-shrink: 2;
 }
 .logo * {
     user-select: none;
@@ -132,6 +136,34 @@ header *, footer * {
 }
 .nt-nav-button:hover * {
   color: white;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+header * {
+  color: var(--black);
+}
+.nav-spacer {
+  width: 100%;
+}
+@media (max-width: 500pt) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links {
+    padding-top: var(--half-spacing);
+    display: flex;
+    justify-content: center;
+  }
 }
 /* Body */
 main {

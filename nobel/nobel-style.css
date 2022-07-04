@@ -1,0 +1,30 @@
+#main {
+    max-width: 700px;
+    margin: auto;
+    padding: var(--double-spacing);
+    padding-top: 0;
+}
+.bod-title-cont *:not(h1, li, img) {
+    padding-top: var(--half-spacing);
+}
+.nt-nav-button {
+    margin-top: var(--double-spacing);
+}
+img {
+    margin-top: var(--half-spacing);
+}
+ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+ol li {
+    list-style: decimal;
+    list-style-position: inside;
+}
+img {
+    border-radius: var(--nt-radius);
+    -webkit-border-radius: var(--nt-radius);
+    -moz-border-radius: var(--nt-radius);
+    -ms-border-radius: var(--nt-radius);
+    -o-border-radius: var(--nt-radius);
+}
